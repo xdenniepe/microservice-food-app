@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: client-mobile
+data:
+  config.js: |-
+    window.ENVIRONMENT      = 'PRODUCTION'
+    window.API_BASE_PATH    = 'https://app.yokaiexpress.com/api'
+    window.BT_AUTHORIZATION = 'production_csjqf4sv_y2zk4zvqkyp2n3zr'

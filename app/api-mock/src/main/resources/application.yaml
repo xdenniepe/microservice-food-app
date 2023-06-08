@@ -1,0 +1,29 @@
+api:
+  payment: ${API_PAYMENT}
+cors:
+  allowedOrigins: ${ALLOWED_ORIGINS}
+server:
+  port: 8084
+spring:
+  application:
+    name: MOCK-SERVICE
+  data:
+    rest:
+      base-path: api
+  datasource:
+    password: ${YOKAI_DB_PASSWORD}
+    url: ${MOCK_DB_URL}
+    username: ${YOKAI_DB_USERNAME}
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: false
+yokai:
+  admin:
+    password: ${YOKAI_ADMIN_PASSWORD}
+    username: ${YOKAI_ADMIN_USERNAME}

@@ -1,0 +1,8 @@
+{
+    "Account is Already Active": "アカウントはすでに有効です",
+    "Looks like the verification link has expired and the account is already active.": "認証リンクが期限切れで、アカウントがすでにアクティブになっているようです。",
+    "Back to Sign-In": "サインインに戻る",
+
+    "The link has expired": "リンクは有効期限が切れています",
+    "Looks like the verification link has expired. We can send the link again.": "検証用リンクの有効期限が切れているようです。再度リンクを送信することができます。"
+}

@@ -1,0 +1,27 @@
+{
+    "THANK YOU FOR YOUR ORDER!": "THANK YOU FOR YOUR ORDER!",
+    "Scan the QR code above at your selected Yo-Kai machine to claim your order.": "Scan the QR code above at your selected Yo-Kai machine to claim your order.",
+    "RECEIPT": "RECEIPT",
+    "Order" : "Order",
+    "Order Details": "Order Details",
+    "Subtotal": "Subtotal",
+    "Taxes": "Taxes",
+    "Total" : "Total",
+    "The receipt has been sent to your email.": "The receipt has been sent to your email.",
+    "Paid with": "Paid with",
+
+
+    "Shoyu Ramen": "Shoyu Ramen",
+    "Black Garlic Tonkotsu Ramen": "Black Garlic Tonkotsu Ramen",
+    "Chicken Udon": "Chicken Udon",
+    "Korean Seafood Jjampong": "Korean Seafood Jjampong",
+    "Shio Ramen": "Shio Ramen",
+    "TanTanmen": "TanTanmen",
+
+    "Pork Bone Broth": "Pork Bone Broth",
+    "Shrimp Broth": "Shrimp Broth",
+    "Chicken Broth": "Chicken Broth",
+
+    "pieces": "pieces"
+    
+}

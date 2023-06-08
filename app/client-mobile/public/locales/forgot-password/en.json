@@ -1,0 +1,9 @@
+{
+    "RESET PASSWORD": "RESET PASSWORD",
+    "Please provide the email you are using in signing in. We will send you a secured link where you can set up your new password.": "Please provide the email you are using in signing in. We will send you a secured link where you can set up your new password.",
+    "Sorry, this email is associated with an account scheduled for deletion.": "Sorry, this email is associated with an account scheduled for deletion.",
+    "Sorry, this email is still inactive.": "Sorry, this email is still inactive.",
+
+    "Email Address": "Email Address",
+    "SEND": "SEND"
+}

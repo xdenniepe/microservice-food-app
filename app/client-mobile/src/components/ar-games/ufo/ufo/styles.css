@@ -1,0 +1,19 @@
+.ufo {
+    animation: ufoEntry 3s linear normal forwards 
+    /* wiggle 2s ease-in-out infinite */
+}
+
+@keyframes ufoEntry {
+    from{
+      top:-100px;
+    }
+    to {
+      top: 10%;
+    }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}

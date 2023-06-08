@@ -1,0 +1,23 @@
+{
+    "CREATE AN ACCOUNT":  "CREATE AN ACCOUNT",
+    "Email address already exists.": "Email address already exists.",
+    "Sorry, this email is associated with an account scheduled for deletion.": "Sorry, this email is associated with an account scheduled for deletion.",
+    "Password should not match your email.": "Password should not match your email.",
+
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+    "Email Address": "Email Address",
+    "Password": "Password",
+    "Confirm Password": "Confirm Password",
+    "SIGN UP": "SIGN UP",
+    "Gender": "Gender",
+    "Optional": "Optional",
+    "MALE": "MALE",
+    "FEMALE": "FEMALE",
+    "OTHERS": "OTHERS",
+    "Date of Birth": "Date of Birth",
+
+    "By continuing, you agree to accept our": "By continuing, you agree to accept our",
+    "Privacy Policy": "Privacy Policy",
+    "Terms Of Service": "Terms Of Service"
+}

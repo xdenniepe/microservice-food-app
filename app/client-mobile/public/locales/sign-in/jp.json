@@ -1,0 +1,14 @@
+{
+    "Sorry, this email is associated with an account scheduled for deletion.": "申し訳ありません。このメールは削除予定のアカウントに関連付けられています。",
+    "The email and/or password you entered is incorrect.":  "入力されたメールアドレスやパスワードが正しくありません。",
+    "Password change is required every 70 days. Redirecting to reset password.": "パスワードは70日ごとに変更する必要があります。パスワードの再設定にリダイレクトされます。",
+
+    "Email": "電子メール",
+    "Password": "パスワード",
+    "Forgot Password?": "パスワードを忘れた方はこちら",
+    "Click Here.": "こちらをクリック.",
+    "SIGN IN": "サインイン",
+    "Don't have an Account?": "アカウントをお持ちでない方",
+    "Sign up": "会員登録",
+    "Or Sign in with": "でサインインするか"
+}

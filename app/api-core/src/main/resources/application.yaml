@@ -1,0 +1,24 @@
+api:
+  internal: ${API_INTERNAL}
+cors:
+  allowedOrigins: ${ALLOWED_ORIGINS}
+spring:
+  application:
+    name: CORE-SERVICE
+  data:
+    rest:
+      base-path: api
+  datasource:
+    password: ${YOKAI_DB_PASSWORD}
+    url: ${YOKAI_DB_URL}
+    username: ${YOKAI_DB_USERNAME}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: false

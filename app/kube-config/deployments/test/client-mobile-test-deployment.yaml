@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-mobile
+spec:
+  selector:
+    matchLabels:
+      app: client-mobile
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: client-mobile
+    spec:
+      containers:
+        - name: client-mobile
+          image: yokai.azurecr.io/client-mobile:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
+          volumeMounts:
+            - name:  client-mobile-config-volume
+              mountPath: /usr/share/nginx/html/config.js
+              subPath: config.js
+              readOnly: true
+      volumes:
+        - name: client-mobile-config-volume
+          configMap:
+            name: client-mobile

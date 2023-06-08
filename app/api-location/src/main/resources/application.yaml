@@ -1,0 +1,35 @@
+api:
+  auth: ${API_AUTH}
+  internal: ${API_INTERNAL}
+  order: ${API_ORDER}
+  payment: ${API_PAYMENT}
+  inventory: ${API_INVENTORY}
+  mock: ${API_MOCK}
+cors:
+  allowedOrigins: ${ALLOWED_ORIGINS}
+server:
+  port: 8086
+spring:
+  application:
+    name: LOCATION-SERVICE
+  data:
+    rest:
+      base-path: api
+  datasource:
+    password: ${YOKAI_DB_PASSWORD}
+    url: ${YOKAI_DB_URL}
+    username: ${YOKAI_DB_USERNAME}
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show-sql: false
+  yokai:
+    admin:
+      password: ${YOKAI_ADMIN_PASSWORD}
+      username: ${YOKAI_ADMIN_USERNAME}

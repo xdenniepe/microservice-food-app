@@ -1,0 +1,16 @@
+{
+    "Password must not match your email.": "パスワードはEメールと一致しないこと。",
+    "First Name": "氏名（フリガナ",
+    "Last Name": "苗字",
+    "New Password": "新しいパスワード",
+    "Confirm Password": "パスワードの確認",
+    "SAVE": "セーブ",
+
+    "Gender": "Gender",
+    "Optional": "Optional",
+    "MALE": "MALE",
+    "FEMALE": "FEMALE",
+    "OTHERS": "OTHERS",
+    "Date of Birth": "Date of Birth",
+    "Phone Number (Optional)": "電話番号（オプション）"
+}

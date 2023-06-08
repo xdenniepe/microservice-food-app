@@ -1,0 +1,26 @@
+{
+    "THANK YOU FOR YOUR ORDER!": "ご注文ありがとうございました。",
+    "Scan the QR code above at your selected Yo-Kai machine to claim your order.": "お近くのヨーカイで上記のQRコードを読み取ってください。",
+    "RECEIPT": "レセプト",
+    "Order" : "ご注文",
+    "Order Details": "注文の詳細",
+    "Subtotal": "小計",
+    "Taxes": "税金",
+    "Total" : "合計",
+    "The receipt has been sent to your email.": "領収書はお客様のEメールに送信されました。",
+    "Paid with": "で支払われる",
+
+    "Shoyu Ramen": "醤油らーめん",
+    "Black Garlic Tonkotsu Ramen": "黒にんにく豚骨らーめん",
+    "Chicken Udon": "チキンうどん",
+    "Korean Seafood Jjampong": "韓国海鮮チャンポン",
+    "Shio Ramen": "塩らーめん",
+    "TanTanmen": "タンタンメン",
+
+    
+    "Pork Bone Broth": "ポークボーンブロス",
+    "Shrimp Broth": "エビのスープ",
+    "Chicken Broth": "チキンブロス",
+
+    "pieces": "ずたずた"
+}

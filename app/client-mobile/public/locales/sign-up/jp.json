@@ -1,0 +1,25 @@
+{
+    "CREATE AN ACCOUNT":  "アカウントを作成する",
+    "Email address already exists.": "メールアドレスが既に存在する。",
+    "Sorry, this email is associated with an account scheduled for deletion.": "申し訳ありません。このメールは削除予定のアカウントに関連しています。",
+    "Password should not match your email.": "パスワードはEメールと一致しないこと。",
+
+    "First Name": "氏名（フリガナ",
+    "Last Name": "苗字",
+    "Email Address": "メールアドレス",
+    "Password": "暗証番号",
+    "Confirm Password": "パスワードの確認",
+    "SIGN UP": "サインアップ",
+    "Gender": "性別",
+    "Optional": "オプション",
+    "MALE": "男性",
+    "FEMALE": "女性",
+    "OTHERS": "その他",
+    "Date of Birth": "生年月日",
+
+
+    "By continuing, you agree to accept our": "続行することにより、お客様は当社のプライバシーポリシーおよび利用規約に同意されたものとします。",
+    "and": "",
+    "Privacy Policy": "",
+    "Terms Of Service": ""
+}

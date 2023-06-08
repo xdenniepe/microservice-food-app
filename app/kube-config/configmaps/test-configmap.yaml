@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: client-mobile
+data:
+  config.js: |-
+    window.ENVIRONMENT      = 'TEST'
+    window.API_BASE_PATH    = 'https://tadmin.yokaiexpress.com/api'
+    window.BT_AUTHORIZATION = 'sandbox_zj9wsd8g_t7sv8pr93h66bjnc'

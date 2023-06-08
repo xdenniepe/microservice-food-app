@@ -1,0 +1,39 @@
+api:
+  auth: ${API_AUTH}
+  internal: ${API_INTERNAL}
+  order: ${API_ORDER}
+cors:
+  allowedOrigins: ${ALLOWED_ORIGINS}
+server:
+  port: 8081
+spring:
+  application:
+    name: ORDER-SERVICE
+  data:
+    rest:
+      base-path: api
+  datasource:
+    password: ${YOKAI_DB_PASSWORD}
+    url: ${YOKAI_DB_URL}
+    username: ${YOKAI_DB_USERNAME}
+    poolSize: 50
+    hikari: 
+      max-lifetime: 30000 #300000 #5 minutes wait time
+      idle-timeout: 10000
+      connection-timeout: 20000
+      minimum-idle: 10
+      auto-commit: true
+      maximum-pool-size: 10
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: false
+yokai:
+  admin:
+    password: ${YOKAI_ADMIN_PASSWORD}
+    username: ${YOKAI_ADMIN_USERNAME}

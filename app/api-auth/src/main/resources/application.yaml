@@ -1,0 +1,40 @@
+api:
+  auth: ${API_AUTH}
+  internal: ${API_INTERNAL}
+  order: ${API_ORDER}
+cors:
+  allowedOrigins: ${ALLOWED_ORIGINS}
+mail:
+  server:
+    from: ${MAIL_SERVER_FROM}
+server:
+  port: 8080
+spring:
+  application:
+    name: AUTH-SERVICE
+  data:
+    rest:
+      base-path: api
+  datasource:
+    password: ${YOKAI_DB_PASSWORD}
+    url: ${YOKAI_DB_URL}
+    username: ${YOKAI_DB_USERNAME}
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: false
+twilio:
+  account:
+    sid: ${SMS_ACCOUNT_SID}
+  auth:
+    token: ${SMS_AUTH_TOKEN}
+  sender: ${SMS_SENDER}
+yokai:
+  admin:
+    password: ${YOKAI_ADMIN_PASSWORD}
+    username: ${YOKAI_ADMIN_USERNAME}

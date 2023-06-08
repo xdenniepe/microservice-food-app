@@ -1,0 +1,11 @@
+{
+    "The link has expired":  "リンクは有効期限が切れています",
+    "Looks like the verification link has expired.": "検証用リンクの有効期限が切れているようです。",
+    "We can send the link again.": "再度リンクを送ることができます。",
+    "Reset Verification Link": "検証用リンクのリセット",
+    "You can re-enter your email": "電子メールを再入力することができます",
+    "here.": "をご覧ください。",
+    "If the one you entered is incorrect.": "入力したものが間違っている場合。",
+
+    "Back to Sign-In": "サインインに戻る"
+}

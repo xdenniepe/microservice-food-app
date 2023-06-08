@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-mock
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-mock
+  template:
+    metadata:
+      labels:
+        app: api-mock
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      containers:
+        - name: api-mock
+          image: yokai.azurecr.io/api-mock:latest
+          imagePullPolicy: Always
+          env:
+            - name: MOCK_DB_URL
+              value: 'jdbc:mysql://yke-dev.mysql.database.azure.com:3306/yokai_external?createDatabaseIfNotExist=true'
+            - name: YOKAI_DB_URL
+              value: 'jdbc:mysql://yke-dev.mysql.database.azure.com:3306/yokai?createDatabaseIfNotExist=true'
+            - name: YOKAI_DB_USERNAME
+              value: 'yke@yke-dev'
+            - name: YOKAI_DB_PASSWORD
+              value: 'DevYokaiExpress@2022!'
+            - name: YOKAI_DB_DRIVER
+              value: 'com.mysql.cj.jdbc.Driver'
+            - name: ALLOWED_ORIGINS
+              value: 'http://20.75.23.111'
+            - name: API_INTERNAL
+              value: 'http://10.0.152.160'
+            - name: API_AUTH
+              value: 'http://10.0.4.88'
+            - name: API_ORDER
+              value: 'http://10.0.82.206'
+            - name: API_PAYMENT
+              value: 'http://10.0.100.91'
+            - name: API_INVENTORY
+              value: 'http://10.0.195.121'
+            - name: API_MOCK
+              value: 'http://10.0.16.223'
+            - name: YOKAI_ADMIN_USERNAME
+              value: 'admin@yokaiexpress.com'
+            - name: YOKAI_ADMIN_PASSWORD
+              value: 'password'
+            - name: MAIL_SERVER_HOST
+              value: 'smtp.gmail.com'
+            - name: MAIL_SERVER_PORT
+              value: '587'
+            - name: MAIL_SERVER_PROTOCOL
+              value: 'smtp'
+            - name: MAIL_SERVER_USERNAME
+              value: 'cocoon.1718@gmail.com'
+            - name: MAIL_SERVER_PASSWORD
+              value: 'Conan0908.'
+            - name: MAIL_SERVER_FROM
+              value: 'cocoon.1718@gmail.com'

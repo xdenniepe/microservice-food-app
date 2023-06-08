@@ -1,0 +1,9 @@
+{
+    "RESET PASSWORD": "パスワードのリセット",
+    "Please provide the email you are using in signing in. We will send you a secured link where you can set up your new password.": "サインイン時に使用している電子メールを入力してください。新しいパスワードを設定するための保護されたリンクをお送りします。",
+    "Sorry, this email is associated with an account scheduled for deletion.": "申し訳ありません。このメールは削除予定のアカウントに関連付けられています。",
+    "Sorry, this email is still inactive.": "申し訳ございませんが、このメールはまだ休止中です。",
+
+    "Email Address": "メールアドレス",
+    "SEND": "センド"
+}

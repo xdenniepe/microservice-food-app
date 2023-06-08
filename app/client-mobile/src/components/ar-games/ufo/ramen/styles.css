@@ -1,0 +1,18 @@
+.ramen {
+    position:'fixed';
+    width:100px;
+    height:'auto';
+    z-index: 5;
+    /* animation: fallDown 10s linear normal forwards; */
+  }
+
+@keyframes fallDown {
+    from {
+      top: 200px;
+      transform: rotate(0deg);
+    }
+    to {
+      top: 100%;
+      transform: rotate(360deg);
+    }
+}

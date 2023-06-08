@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  yokai-db:
+    image: mysql:5.7
+    platform: linux/x86_64
+    container_name: yokai-mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'yokai'
+      MYSQL_PASSWORD: 'YokaiExpress@2022!'
+      MYSQL_ROOT_PASSWORD: 'YokaiExpress@2022!'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3306:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+      # Where our data will be persisted
+    volumes:
+      ## persist data across docker-compose up/down
+      - yokai-express-db:/var/lib/mysql
+volumes:
+  yokai-express-db:

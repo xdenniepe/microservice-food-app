@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-inventory
+  labels:
+    app: api-inventory
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8083
+      protocol: TCP
+  selector:
+    app: api-inventory

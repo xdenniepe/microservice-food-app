@@ -1,0 +1,34 @@
+api:
+  auth: ${API_AUTH}
+  internal: ${API_INTERNAL}
+  order: ${API_ORDER}
+  payment: ${API_PAYMENT}
+  location: ${API_LOCATION}
+  mock: ${API_MOCK}
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway
+server:
+  port: 8000
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedHeaders: '*'
+            allowedMethods: '*'
+            allowedOrigins: ${ALLOWED_ORIGINS}
+  datasource:
+    password: ${YOKAI_DB_PASSWORD}
+    url: ${YOKAI_DB_URL}
+    username: ${YOKAI_DB_USERNAME}
+  main:
+    web-application-type: reactive

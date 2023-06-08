@@ -1,0 +1,12 @@
+{
+    "The code has expired, Please see the option to resend code below.": "コードの有効期限が切れているため、以下のコードを再送信するオプションをご覧ください。",
+    "Invalid code. Please try again.": "コードが無効です。もう一度やり直してください。",
+    "Profile updated Successfully!": "プロフィールの更新に成功しました",
+    "The code has been resent to your email.": "コードはあなたのメールに再送信されました。",
+    "TWO-FACTOR AUTHENTICATION": "二要素認証",
+    "For added security, we sent a verification code to your email. Please enter the code to continue.": "セキュリティ強化のため、お客様の電子メールに認証コードを送信しました。続行するには、コードを入力してください。",
+    "Input Verification Code": "認証コードの入力",
+    "Didn't Get The Verification Code?": "認証コードを取得できませんでしたか？",
+    "Confirm": "確認",
+    "Resend Code": "再送信コード"
+}

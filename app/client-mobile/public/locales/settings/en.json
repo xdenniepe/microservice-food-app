@@ -1,0 +1,16 @@
+{
+    "Password must not match your email.": "Password must not match your email.",
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+    "New Password": "New Password",
+    "Confirm Password": "Confirm Password",
+    "SAVE": "SAVE",
+
+    "Gender": "Gender",
+    "Optional": "Optional",
+    "MALE": "MALE",
+    "FEMALE": "FEMALE",
+    "OTHERS": "OTHERS",
+    "Date of Birth": "Date of Birth",
+    "Phone Number (Optional)": "Phone Number (Optional)"
+}

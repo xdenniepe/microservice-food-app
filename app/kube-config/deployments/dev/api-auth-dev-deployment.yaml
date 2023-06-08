@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-auth
+  template:
+    metadata:
+      labels:
+        app: api-auth
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      containers:
+        - name: api-auth
+          image: yokai.azurecr.io/api-auth:latest
+          imagePullPolicy: Always
+          env:
+            - name: MOCK_DB_URL
+              value: 'jdbc:mysql://yke-dev.mysql.database.azure.com:3306/yokai_external?createDatabaseIfNotExist=true'
+            - name: YOKAI_DB_URL
+              value: 'jdbc:mysql://yke-dev.mysql.database.azure.com:3306/yokai?createDatabaseIfNotExist=true'
+            - name: YOKAI_DB_USERNAME
+              value: 'yke@yke-dev'
+            - name: YOKAI_DB_PASSWORD
+              value: 'DevYokaiExpress@2022!'
+            - name: YOKAI_DB_DRIVER
+              value: 'com.mysql.cj.jdbc.Driver'
+            - name: ALLOWED_ORIGINS
+              value: 'http://20.75.23.111'
+            - name: API_INTERNAL
+              value: 'http://10.0.152.160'
+            - name: API_AUTH
+              value: 'http://10.0.4.88'
+            - name: API_ORDER
+              value: 'http://10.0.82.206'
+            - name: API_PAYMENT
+              value: 'http://10.0.100.91'
+            - name: API_INVENTORY
+              value: 'http://10.0.195.121'
+            - name: API_MOCK
+              value: 'http://10.0.16.223'
+            - name: YOKAI_ADMIN_USERNAME
+              value: 'admin@yokaiexpress.com'
+            - name: YOKAI_ADMIN_PASSWORD
+              value: 'password'
+            - name: MAIL_SERVER_HOST
+              value: 'smtp.sendgrid.net'
+            - name: MAIL_SERVER_PORT
+              value: '587'
+            - name: MAIL_SERVER_PROTOCOL
+              value: 'smtp'
+            - name: MAIL_SERVER_USERNAME
+              value: 'apikey'
+            - name: MAIL_SERVER_PASSWORD
+              value: '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'
+            - name: MAIL_SERVER_FROM
+              value: 'dennie.pe@hoolisoftware.com'
+            - name: SMS_ACCOUNT_SID
+              value: 'ACce6d504361984d39fc62302522d35539'
+            - name: SMS_AUTH_TOKEN
+              value: 'e977c12f58bd2c1f160ad88057f5afa8'
+            - name: SMS_SENDER
+              value: '+15595435792'

@@ -1,0 +1,144 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-payment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-payment
+  template:
+    metadata:
+      labels:
+        app: api-payment
+    spec:
+      containers:
+        - name: api-payment
+          image: yokai.azurecr.io/api-payment:latest
+          imagePullPolicy: Always
+          env:
+            - name: MOCK_DB_URL
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: mock-db-url
+            - name: YOKAI_DB_URL
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: db-url
+            - name: YOKAI_DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: db-username
+            - name: YOKAI_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: db-password
+            - name: YOKAI_DB_DRIVER
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: db-driver
+            - name: ALLOWED_ORIGINS
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: allowed-origins
+            - name: API_INTERNAL
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: api-internal
+            - name: API_AUTH
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: api-auth
+            - name: API_ORDER
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: api-order
+            - name: API_PAYMENT
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: api-payment
+            - name: API_INVENTORY
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: api-inventory
+            - name: API_MOCK
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: api-mock
+            - name: API_LOCATION
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: api-location      
+            - name: YOKAI_ADMIN_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: yokai-admin-username
+            - name: YOKAI_ADMIN_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: yokai-admin-password
+            - name: MAIL_SERVER_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: mail-server-host
+            - name: MAIL_SERVER_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: mail-server-port
+            - name: MAIL_SERVER_PROTOCOL
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: mail-server-protocol
+            - name: MAIL_SERVER_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: mail-server-username
+            - name: MAIL_SERVER_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: mail-server-password
+            - name: MAIL_SERVER_FROM
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: mail-server-from
+            - name: BT_ENVIRONMENT
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: bt-env
+            - name: BT_MERCHANT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: bt-merchant-id
+            - name: BT_PUBLIC_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: bt-public-key
+            - name: BT_PRIVATE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: testenv-secret
+                  key: bt-private-key
