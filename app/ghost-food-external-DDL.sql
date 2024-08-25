@@ -1,5 +1,5 @@
 # Mock Server DDL
-USE yokai_external;
+USE ghost_food_external;
 
 #####################
 # DROP TABLES
