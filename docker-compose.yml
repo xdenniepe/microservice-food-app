@@ -20,4 +20,4 @@ services:
       ## persist data across docker-compose up/down
       - yokai-express-db:/var/lib/mysql
 volumes:
-  yokai-express-db:
+  ghost-food-db:
