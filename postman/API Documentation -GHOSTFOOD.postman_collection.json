@@ -154,7 +154,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"firstName\": \"Dennie\",\n    \"lastName\" : \"Pe\",\n    \"email\": \"dennie.pe@hoolisoftware.com\",\n    \"password\": \"password\"\n}",
+									"raw": "{\n    \"firstName\": \"Dennie\",\n    \"lastName\" : \"Pe\",\n    \"email\": \"dennie.pe@testmail.com\",\n    \"password\": \"password\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -179,7 +179,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"firstName\": \"Dennie\",\n    \"lastName\" : \"Pe\",\n    \"email\": \"dennie.pe@hoolisoftware.com\",\n    \"password\": \"password\"\n}",
+											"raw": "{\n    \"firstName\": \"Dennie\",\n    \"lastName\" : \"Pe\",\n    \"email\": \"dennie.pe@testmail.com\",\n    \"password\": \"password\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1070,7 +1070,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n    \"_embedded\": {\n        \"users\": [\n            {\n                \"whoAdded\": 1,\n                \"whoUpdated\": null,\n                \"whenAdded\": null,\n                \"timestamp\": 1647267470,\n                \"email\": \"admin@ghostfood.com\",\n                \"firstName\": \"John\",\n                \"lastName\": \"Doe\",\n                \"status\": \"ACT\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/api/users/1\"\n                    },\n                    \"user\": {\n                        \"href\": \"http://localhost:8080/api/users/1\"\n                    }\n                }\n            },\n            {\n                \"whoAdded\": null,\n                \"whoUpdated\": null,\n                \"whenAdded\": 1647266489,\n                \"timestamp\": 1647266489,\n                \"email\": \"dennie.pe@hoolisoftware.com\",\n                \"firstName\": \"Dennie\",\n                \"lastName\": \"Pe\",\n                \"status\": \"INA\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/api/users/2\"\n                    },\n                    \"user\": {\n                        \"href\": \"http://localhost:8080/api/users/2\"\n                    }\n                }\n            }\n        ]\n    },\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/api/users\"\n        },\n        \"profile\": {\n            \"href\": \"http://localhost:8080/api/profile/users\"\n        },\n        \"search\": {\n            \"href\": \"http://localhost:8080/api/users/search\"\n        }\n    },\n    \"page\": {\n        \"size\": 20,\n        \"totalElements\": 2,\n        \"totalPages\": 1,\n        \"number\": 0\n    }\n}"
+									"body": "{\n    \"_embedded\": {\n        \"users\": [\n            {\n                \"whoAdded\": 1,\n                \"whoUpdated\": null,\n                \"whenAdded\": null,\n                \"timestamp\": 1647267470,\n                \"email\": \"admin@ghostfood.com\",\n                \"firstName\": \"John\",\n                \"lastName\": \"Doe\",\n                \"status\": \"ACT\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/api/users/1\"\n                    },\n                    \"user\": {\n                        \"href\": \"http://localhost:8080/api/users/1\"\n                    }\n                }\n            },\n            {\n                \"whoAdded\": null,\n                \"whoUpdated\": null,\n                \"whenAdded\": 1647266489,\n                \"timestamp\": 1647266489,\n                \"email\": \"dennie.pe@testmail.com\",\n                \"firstName\": \"Dennie\",\n                \"lastName\": \"Pe\",\n                \"status\": \"INA\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/api/users/2\"\n                    },\n                    \"user\": {\n                        \"href\": \"http://localhost:8080/api/users/2\"\n                    }\n                }\n            }\n        ]\n    },\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/api/users\"\n        },\n        \"profile\": {\n            \"href\": \"http://localhost:8080/api/profile/users\"\n        },\n        \"search\": {\n            \"href\": \"http://localhost:8080/api/users/search\"\n        }\n    },\n    \"page\": {\n        \"size\": 20,\n        \"totalElements\": 2,\n        \"totalPages\": 1,\n        \"number\": 0\n    }\n}"
 								}
 							]
 						},
