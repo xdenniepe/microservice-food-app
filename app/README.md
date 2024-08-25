@@ -1,4 +1,4 @@
-# YOKAI EXPRESS APP
+# GHOST FOOD APP
 #### 
 #
 # Table of Contents
@@ -6,10 +6,10 @@
 # Setup Database
 Run Database from Docker
 
-- **Step 1:** Go to yokai-api with `cd app`
+- **Step 1:** Go to ghost-food-api with `cd app`
 - **Step 2:** Run docker-compose with `docker-compose up`
 - **Step 3:** Open MySQL Workbench in your applications
-- **Step 4:** Create a database `yokai`
+- **Step 4:** Create a database `ghost-food`
 - **Step 5:** Run DDL scripts from `../DDL`
 
 
