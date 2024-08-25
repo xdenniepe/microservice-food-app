@@ -1,5 +1,5 @@
-# Yokai DDL
-USE yokai;
+# ghost-food DDL
+USE ghost-food;
 
 #####################
 # DROP TABLES
